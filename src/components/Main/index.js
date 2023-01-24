@@ -19,9 +19,18 @@ function index() {
       <div className="countdown-box">
         <div className="countdown-tagline">Get ready to be Engaged, Enthralled, Entertained in</div>
         <div className="counter">
-          <div className="counter-day">15:</div>
-          <div className="counter-minute">32:</div>
-          <div className="counter-seconds">06</div>
+          <div className="counter-day">
+            <p className='counter-day-number'>15:</p>
+            <p className='counter-day-text'>Days</p>
+          </div>
+          <div className="counter-minute">
+            <p className='counter-minute-number'>32:</p>
+            <p className='counter-minute-text'>Minutes</p>
+          </div>
+          <div className="counter-seconds">
+            <p className='counter-seconds-number'>06</p>
+            <p className='counter-seconds-text'>Seconds</p>
+          </div>
         </div>
       </div>
     </>

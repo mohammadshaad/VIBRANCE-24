@@ -102,6 +102,25 @@ body {
   text-fill-color: transparent;
 }
 
+.counter-minute,
+.counter-day,
+.counter-seconds {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-minute-text,
+.counter-day-text,
+.counter-seconds-text {
+  font-size: 12px;
+  width: fit-content;
+  margin: auto;
+  margin-top: -124px;
+  font-family: "Gilroy-Regular";
+  text-align: center;
+  font-size: 23px;
+}
+
 /* Media Queries */
 @media (max-width: 700px) {
   .background-image {
@@ -126,6 +145,22 @@ body {
 
   .counter {
     font-size: 64px;
+  }
+
+  .header-tagline-box > img {
+    display: block;
+    width: 23px;
+  }
+
+  .counter-minute-text,
+  .counter-day-text,
+  .counter-seconds-text {
+    font-size: 11px;
+    margin-top: -17px;
+  }
+
+  .background-image {
+    height: 100vh;
   }
 }
 
@@ -152,5 +187,12 @@ body {
 
   .counter {
     font-size: 164px;
+  }
+
+  .counter-minute-text,
+  .counter-day-text,
+  .counter-seconds-text {
+    font-size: 16px;
+    margin-top: -87px;
   }
 }
