@@ -1,11 +1,156 @@
 body {
-    background: black;
+  background: black;
 }
 
 .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -999;
-    opacity: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  opacity: 70%;
+  width: 100%;
+}
+
+.header-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 43px;
+  padding: 24px 12px;
+  width: 100%;
+  background: rgba(217, 217, 217, 0.126);
+  backdrop-filter: blur(30px);
+  box-sizing: border-box;
+}
+
+.header-tagline-box {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.header-tagline {
+  font-family: "CirkaBold";
+  font-size: 32px;
+  line-height: 38px;
+  color: #f9b042;
+}
+
+.header-text {
+  font-family: "GilroyBoldItalic";
+  font-size: 156px;
+  line-height: 100%;
+  text-align: center;
+  background: linear-gradient(
+    193.44deg,
+    #ffffff 9.65%,
+    rgba(255, 255, 255, 0.356) 143.94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 22px 141px rgba(0, 0, 0, 0.12),
+    0px 9.19107px 58.9064px rgba(0, 0, 0, 0.0862625),
+    0px 4.91399px 31.4942px rgba(0, 0, 0, 0.0715329),
+    0px 2.75474px 17.6554px rgba(0, 0, 0, 0.06),
+    0px 1.46302px 9.37664px rgba(0, 0, 0, 0.0484671),
+    0px 0.608796px 3.90183px rgba(0, 0, 0, 0.0337375);
+}
+
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 80px;
+}
+
+.countdown-tagline {
+  font-family: "CirkaBold";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  background: linear-gradient(
+    182.47deg,
+    #ffffff 2.06%,
+    rgba(255, 255, 255, 0) 313.65%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  font-family: "Gilroy-Regular";
+  font-size: 256px;
+  line-height: 100%;
+  background: linear-gradient(
+    188.26deg,
+    #ffffff 6.34%,
+    rgba(255, 255, 255, 0) 147.97%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  .background-image {
+    height: 100%;
+  }
+
+  .header-tagline {
+    font-size: 13px;
+  }
+
+  .header-text {
+    font-size: 64px;
+  }
+
+  .countdown-box {
+    margin-top: 20px;
+  }
+
+  .countdown-tagline {
+    font-size: 12px;
+  }
+
+  .counter {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 701px) {
+  .background-image {
+    height: 100%;
+  }
+
+  .header-tagline {
+    font-size: 23px;
+  }
+
+  .header-text {
+    font-size: 124px;
+  }
+
+  .countdown-box {
+    margin-top: 26px;
+  }
+
+  .countdown-tagline {
+    font-size: 22px;
+  }
+
+  .counter {
+    font-size: 164px;
+  }
 }
