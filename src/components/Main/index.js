@@ -17,7 +17,7 @@ function index() {
       </div>
 
       <div className="countdown-box">
-        <div className="countdown-tagline">Get ready to be Engaged, Enthralled, Entertained in</div>
+        <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained in</div>
         <div className="counter">
           <div className="counter-day">
             <p className='counter-day-number'>15:</p>

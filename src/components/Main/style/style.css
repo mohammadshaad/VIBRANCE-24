@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 body {
   background: black;
 }
@@ -70,10 +72,10 @@ body {
 }
 
 .countdown-tagline {
-  font-family: "CirkaBold";
+  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 100%;
+  font-size: 20px;
+  text-transform: uppercase;
   background: linear-gradient(
     182.47deg,
     #ffffff 2.06%,
