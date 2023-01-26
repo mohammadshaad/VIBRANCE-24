@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
-
 function index() {
   return (
     <nav className='flex items-center justify-center w-full h-full'>
@@ -19,9 +18,11 @@ function index() {
         </div>
 
         <div className='flex items-center justify-between gap-4 h-full mr-4'>
-          <div className='instagram-icon'>
-            <FontAwesomeIcon icon={faInstagram} />
-          </div>
+          <a href='https://www.instagram.com/vibrancevit/' target="_blank" rel="noreferrer">
+            <div className='instagram-icon'>
+              <FontAwesomeIcon icon={faInstagram} />
+            </div>
+          </a>
           <div className='px-6 py-2 gallery-border'>
             View Gallery
           </div>
