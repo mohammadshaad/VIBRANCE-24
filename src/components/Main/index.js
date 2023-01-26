@@ -44,7 +44,7 @@ function Index() {
   return (
     <>
       <img src={background} alt='background' className='background-image' />
-      <div className="header-box">
+      <div className="header-box flex items-center justify-center flex-col">
         <div className="header-tagline-box">
           <img src={star} alt="star" />
           <p className='header-tagline'>VIT Chennai's Annual Sports and Cultural Fest</p>
