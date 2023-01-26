@@ -56,6 +56,10 @@ function Index() {
             <p className='counter-day-number'>{timerDays}:</p>
             <p className='counter-day-text'>Days</p>
           </div>
+          <div className="counter-day">
+            <p className='counter-day-number'>{timerHours}:</p>
+            <p className='counter-day-text'>Hours</p>
+          </div>
           <div className="counter-minute">
             <p className='counter-minute-number'>{timerMinutes}:</p>
             <p className='counter-minute-text'>Minutes</p>
