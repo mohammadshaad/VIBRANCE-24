@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import background from '../../assets/background.webp'
 import '../../components/Main/style/style.css'
-import star from "../../assets/star.svg"
+import star1 from "../../assets/star1.svg"
+import star2 from "../../assets/star2.svg"
 
 function Index() {
   const [timerDays, setTimerDays] = useState();
@@ -46,9 +47,9 @@ function Index() {
       <img src={background} alt='background' className='background-image' />
       <div className="header-box flex items-center justify-center flex-col">
         <div className="header-tagline-box">
-          <img src={star} alt="star" />
+          <img src={star1} alt="star" />
           <p className='header-tagline'>VIT Chennai's Annual Sports and Cultural Fest</p>
-          <img src={star} alt="star" />
+          <img src={star2} alt="star" />
         </div>
         <p className='header-text'>Vibrance is Back</p>
       </div>
