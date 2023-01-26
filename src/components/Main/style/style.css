@@ -13,19 +13,19 @@ body {
 }
 
 .header-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   gap: 12px;
-  margin-top: 43px;
+  margin-top: 75px;
   padding: 24px 12px;
   width: 100%;
   background: rgba(217, 217, 217, 0.052);
   backdrop-filter: blur(20px);
   box-sizing: border-box;
   border: 1px solid;
-  border-image: linear-gradient(90deg, #FFFFFF, rgba(255, 255, 255, 0));
+  border-right: none;
+  border-left: none;
+  border-image-source: linear-gradient(0deg, #FFFFFF, rgba(255, 255, 255, 0));
+  border-image-slice: 10; /* set the slice value */
+
 }
 
 .header-tagline-box {
