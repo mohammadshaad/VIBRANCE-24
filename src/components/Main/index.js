@@ -3,6 +3,8 @@ import background from '../../assets/background.webp'
 import '../../components/Main/style/style.css'
 import star1 from "../../assets/star1.svg"
 import star2 from "../../assets/star2.svg"
+import ellipse1 from "../../assets/ellipse1.webp"
+import ellipse2 from "../../assets/ellipse2.webp"
 
 function Index() {
   const [timerDays, setTimerDays] = useState();
@@ -45,14 +47,25 @@ function Index() {
   return (
     <>
       <img src={background} alt='background' className='background-image' />
+      <div className='ellipses flex items-center justify-between'>
+        <div className='ell1'>
+          <img src={ellipse2} alt='' className='ellipse1' />
+        </div>
+        <div className='ell2'>
+          <img src={ellipse1} alt='' className='ellipse2' />
+        </div>
+      </div>
       <div className="header-box flex items-center justify-center flex-col">
-        <div className="header-tagline-box">
+        <div className="header-tagline-box flex items-center justify-center gap-14">
           <img src={star1} alt="star" />
           <p className='header-tagline'>VIT Chennai's Annual Sports and Cultural Fest</p>
           <img src={star2} alt="star" />
         </div>
+
         <p className='header-text'>Vibrance is Back</p>
       </div>
+
+      
 
       <div className="countdown-box">
         <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained in</div>
