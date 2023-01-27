@@ -14,7 +14,7 @@ body {
 
 .header-box {
   gap: 12px;
-  margin-top: 75px;
+  position: relative;
   padding: 24px 12px;
   width: 100%;
   background: rgba(217, 217, 217, 0.052);
@@ -28,22 +28,27 @@ body {
 
 }
 
-.header-tagline-box {
-  display: flex;
-  justify-content: center;
-  gap: 14px;
+
+.ellipses {
+  position: absolute;
+  top: 5;
+  left: 0;
+  width: 100%;
 }
+
+
+
 
 .header-tagline {
   font-family: "CirkaBold";
-  font-size: 32px;
+  font-size: 22px;
   line-height: 38px;
   color: #f9b042;
 }
 
 .header-text {
   font-family: "GilroyBoldItalic";
-  font-size: 156px;
+  font-size: 106px;
   line-height: 100%;
   text-align: center;
   background: linear-gradient(
@@ -69,7 +74,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .countdown-tagline {
