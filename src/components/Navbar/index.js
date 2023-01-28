@@ -23,9 +23,9 @@ function index() {
               <FontAwesomeIcon icon={faInstagram} />
             </div>
           </a>
-          <div className='px-6 py-2 gallery-border'>
+          {/* <div className='px-6 py-2 gallery-border'>
             View Gallery
-          </div>
+          </div> */}
         </div>
 
 
