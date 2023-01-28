@@ -58,7 +58,7 @@ function Index() {
       <div className="header-box flex items-center justify-center flex-col">
         <div className="header-tagline-box flex items-center justify-center gap-14">
           <img src={star1} alt="star" />
-          <p className='header-tagline'>VIT Chennai's Annual Sports and Cultural Fest</p>
+          <p className='header-tagline text-center leading-3'>VIT Chennai's Annual Sports and Cultural Fest</p>
           <img src={star2} alt="star" />
         </div>
 
