@@ -9,7 +9,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 function index() {
     return (
         <>
-            <AnimationOnScroll animateIn="animate__fadeIn">
+            <AnimationOnScroll animateIn="animate__fadeIn"> 
 
                 <div className='slider-container flex items-center justify-center'>
                     <div className='slider flex items-center justify-center flex-col'>
