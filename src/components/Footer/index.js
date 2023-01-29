@@ -9,18 +9,20 @@ function index() {
     return (
         <div>
 
-            <AnimationOnScroll animateIn="animate__fadeIn">
-                <div className='footer mt-20 sm:mt-10 w-full flex items-center justify-center'>
+            <div className='footer mt-20 sm:mt-10 w-full flex items-center justify-center'>
+                <AnimationOnScroll animateIn="animate__fadeIn">
 
-                    <div className='footer-wrapper w-3/4 rounded-xl p-8 flex items-center justify-between m-10'>
+                    <div className='footer-wrapper rounded-xl p-8 flex items-center justify-between m-10'>
                         <h1 className="text-lg font-medium">CONTACT US</h1>
-                        <div className='instagram-icon text-black'>
-                            <FontAwesomeIcon icon={faInstagram} />
-                        </div>
+                        <a href='https://www.instagram.com/vibrancevit/' target="_blank" rel="noreferrer">
+                            <div className='instagram-icon-contact'>
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </div>
+                        </a>
                     </div>
 
-                </div>
-            </AnimationOnScroll>
+                </AnimationOnScroll>
+            </div>
         </div>
     )
 }

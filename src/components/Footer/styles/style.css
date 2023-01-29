@@ -1,13 +1,14 @@
 .footer {
     height: 250px;
-    background: linear-gradient(105deg, rgba(178, 25, 28, 1), rgba(187, 46, 121, 1));
+    background: linear-gradient(145deg, rgba(178, 25, 28, 1), rgba(187, 46, 121, 1) 50%);
 }
 .footer-wrapper {
     background: white;
+    width: 80vw;
     box-shadow: 0px 0px 5px 0px white;
 }
 
-.instagram-icon {
+.instagram-icon-contact {
     width: 50px;
     height: 50px;
     text-align: center;
@@ -21,7 +22,7 @@
     font-size: 20px;
   }
   
-  .instagram-icon:hover {
+  .instagram-icon-contact:hover {
     background: linear-gradient(95deg, rgba(178, 25, 28, 1), rgba(187, 46, 121, 1));
     cursor: pointer;
     border: none;
