@@ -4,7 +4,7 @@ import vibranceLogo2 from '../../assets/vibrancelogo2.png'
 import '../../components/Navbar/style/style.css'
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import vitLogo from '../../assets/vitbeautifullogo.webp'
 
 
 function index() {
@@ -24,6 +24,10 @@ function index() {
               <FontAwesomeIcon icon={faInstagram} />
             </div>
           </a>
+
+          <div className='vit-div'>
+            <img src={vitLogo} alt='vit-logo' className='vit-logo'/>
+          </div>
           {/* <div className='px-6 py-2 gallery-border'>
             View Gallery
           </div> */}
