@@ -7,6 +7,21 @@
   width: 100px;
 }
 
+.vit-div {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.vit-logo {
+  width: 100px;
+}
+
 .gallery-border {
   border: 2px solid var(--orange);
   border-radius: 80px;
