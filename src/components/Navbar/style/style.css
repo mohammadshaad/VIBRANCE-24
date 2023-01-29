@@ -4,12 +4,12 @@
 }
 
 .vibrancelogo {
-  width: 100px;
+  width: 130px;
 }
 
 .vit-div {
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50px;
   background: white;
   display: flex;
@@ -19,7 +19,7 @@
 }
 
 .vit-logo {
-  width: 100px;
+  width: 130px;
 }
 
 .gallery-border {
@@ -39,8 +39,8 @@
 }
 
 .instagram-icon {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@
   border-radius: 80px;
   color: white;
   transition: all 0.4s;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .instagram-icon:hover {
