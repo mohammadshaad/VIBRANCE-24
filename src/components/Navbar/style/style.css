@@ -44,3 +44,16 @@
   transition: all 0.4s;
   color: black;
 }
+
+@media (max-width: 423px) {
+
+  .vibrancelogo {
+    width: 80px;
+  }
+
+  .instagram-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+  }
+}

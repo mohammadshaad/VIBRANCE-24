@@ -4,6 +4,8 @@ import Main from './components/Main';
 import Gallery from './components/Gallery'
 
 function App() {
+
+
   return (
     <>
       <Index />
@@ -12,5 +14,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

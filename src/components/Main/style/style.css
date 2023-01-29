@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-body {
-  background: black;
-}
 
 .background-image {
   position: absolute;
@@ -23,11 +20,9 @@ body {
   border: 1px solid;
   border-right: none;
   border-left: none;
-  border-image-source: linear-gradient(0deg, #FFFFFF, rgba(255, 255, 255, 0));
+  border-image-source: linear-gradient(0deg, #ffffff, rgba(255, 255, 255, 0));
   border-image-slice: 10; /* set the slice value */
-
 }
-
 
 .ellipses {
   position: absolute;
@@ -35,9 +30,6 @@ body {
   left: 0;
   width: 100%;
 }
-
-
-
 
 .header-tagline {
   font-family: "CirkaBold";
@@ -78,7 +70,7 @@ body {
 }
 
 .countdown-tagline {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 20px;
   text-transform: uppercase;
@@ -129,18 +121,67 @@ body {
   font-size: 23px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 423px) {
   .background-image {
-    height: 100%;
+    height: 100vh;
   }
 
+  .header-tagline {
+    font-size: 12px;
+  }
+
+  .header-text {
+    font-size: 44px;
+  }
+
+  .countdown-box {
+    margin-top: 20px;
+  }
+
+  .countdown-tagline {
+    font-size: 8px;
+  }
+
+  .counter {
+    font-size: 64px;
+  }
+
+  .header-tagline-box > img {
+    display: block;
+    width: 23px;
+  }
+
+  .counter-minute-text,
+  .counter-day-text,
+  .counter-seconds-text {
+    font-size: 11px;
+    margin-top: -17px;
+  }
+
+
+  .ellipses {
+    position: absolute;
+    top: 4;
+    left: 0;
+    width: 100%;
+  }
+
+  .ellipses .ellipse1, 
+  .ellipses .ellipse2 {
+    width: 40px;
+  }
+
+  .stars img {
+    width: 15px;
+  }
 }
 
 /* Media Queries */
-@media (max-width: 700px) {
+@media (max-width: 700px) and (min-width: 424px) {
   .background-image {
     height: 100%;
   }
+
 
   .header-tagline {
     font-size: 13px;
@@ -211,4 +252,3 @@ body {
     margin-top: -87px;
   }
 }
-

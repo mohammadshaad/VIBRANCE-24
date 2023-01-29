@@ -1,5 +1,6 @@
 import React from 'react'
-import vibranceLogo from '../../assets/logo.webp'
+// import vibranceLogo from '../../assets/logo.webp'
+import vibranceLogo2 from '../../assets/vibrancelogo2.png'
 import '../../components/Navbar/style/style.css'
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,9 +12,9 @@ function index() {
     <nav className='flex items-center justify-center w-full h-full'>
       <div className='navcontainer flex items-center justify-between mx-5 w-full h-full'>
 
-        <div className='flex items-center justify-center mt-4'>
+        <div className='flex items-center justify-center'>
           <a className='h-full' href='/'>
-            <img className='vibrancelogo' src={vibranceLogo} alt='vibrance-logo' />
+            <img className='vibrancelogo' src={vibranceLogo2} alt='vibrance-logo' />
           </a>
         </div>
 
