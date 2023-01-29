@@ -9,8 +9,8 @@ import vitLogo from '../../assets/vitbeautifullogo.webp'
 
 function index() {
   return (
-    <nav className='flex items-center justify-center w-full h-full'>
-      <div className='navcontainer flex items-center justify-between mx-5 w-full h-full'>
+    <nav className='flex items-center justify-center w-full'>
+      <div className='navcontainer flex items-center justify-between mx-5 sm:mx-0 w-full'>
 
         <div className='flex items-center justify-center'>
           <a className='h-full' href='/'>
@@ -18,7 +18,7 @@ function index() {
           </a>
         </div>
 
-        <div className='flex items-center justify-between gap-4 h-full mr-4'>
+        <div className='flex items-center justify-between'>
           <a href='https://www.instagram.com/vibrancevit/' target="_blank" rel="noreferrer">
             <div className='instagram-icon'>
               <FontAwesomeIcon icon={faInstagram} />

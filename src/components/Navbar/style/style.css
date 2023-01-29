@@ -3,14 +3,21 @@
   --yellow: #faff07;
 }
 
+nav {
+  height: 145px;
+}
+
 .vibrancelogo {
-  width: 130px;
+  width: 180px;
 }
 
 .vit-div {
-  width: 60px;
-  height: 60px;
-  border-radius: 50px;
+  padding-right: 15px;
+  padding-left: 10px;
+  position: absolute;
+  right: 0px;
+  height: 80px;
+  border-radius: 50px 0px 0px 50px;
   background: white;
   display: flex;
   align-items: center;
@@ -19,7 +26,7 @@
 }
 
 .vit-logo {
-  width: 130px;
+  width: 180px;
 }
 
 .gallery-border {
@@ -39,6 +46,8 @@
 }
 
 .instagram-icon {
+  position: relative;
+  right: 200px;
   width: 55px;
   height: 55px;
   text-align: center;
@@ -60,15 +69,69 @@
   color: black;
 }
 
-@media (max-width: 423px) {
-
+@media (min-width: 424px) and (max-width: 774px) {
   .vibrancelogo {
-    width: 80px;
+    width: 120px;
   }
 
   .instagram-icon {
     width: 35px;
     height: 35px;
     font-size: 15px;
+    right: 130px;
+  }
+
+  .vit-div {
+    padding-right: 5px;
+    height: 60px;
+  }
+
+  .vit-logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 423px) {
+
+  .vibrancelogo {
+    width: 120px;
+  }
+
+  .instagram-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    right: 120px;
+  }
+
+  .vit-div {
+    padding-right: 5px;
+    height: 60px;
+  }
+
+  .vit-logo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 342px) {
+  .vibrancelogo {
+    width: 120px;
+  }
+
+  .instagram-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    right: 120px;
+  }
+
+  .vit-div {
+    padding-right: 5px;
+    height: 60px;
+  }
+
+  .vit-logo {
+    width: 100px;
   }
 }
