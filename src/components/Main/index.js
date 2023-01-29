@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-// import background from '../../assets/background.webp'
-import background2 from '../../assets/background2.webp'
+import background from '../../assets/background.webp'
+// import background2 from '../../assets/background2.webp'
 import '../../components/Main/style/style.css'
 import star1 from "../../assets/star1.svg"
 import star2 from "../../assets/star2.svg"
@@ -72,7 +72,7 @@ function Index() {
 
   return (
     <>
-      <img src={background2} alt='background' className='background-image' />
+      <img src={background} alt='background' className='background-image' />
       <div className='ellipses flex items-center justify-between'>
         <div className='ell1'>
           <img src={ellipse2} alt='' className='ellipse1' />
