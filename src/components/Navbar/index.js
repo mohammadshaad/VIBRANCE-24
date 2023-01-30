@@ -2,8 +2,8 @@ import React from 'react'
 // import vibranceLogo from '../../assets/logo.webp'
 import vibranceLogo2 from '../../assets/vibrancelogo2.png'
 import '../../components/Navbar/style/style.css'
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import vitLogo from '../../assets/vitbeautifullogo.webp'
 
 
@@ -19,11 +19,11 @@ function index() {
         </div>
 
         <div className='flex items-center justify-between'>
-          <a href='https://www.instagram.com/vibrancevit/' target="_blank" rel="noreferrer">
+          {/* <a href='https://www.instagram.com/vibrancevit/' target="_blank" rel="noreferrer">
             <div className='instagram-icon'>
               <FontAwesomeIcon icon={faInstagram} />
             </div>
-          </a>
+          </a> */}
 
           <div className='vit-div'>
             <img src={vitLogo} alt='vit-logo' className='vit-logo'/>
