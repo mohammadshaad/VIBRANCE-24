@@ -7,7 +7,6 @@
   font-size: 15px;
 }
 
-
 .sports-container::before {
   content: "";
   width: 100%;
@@ -22,8 +21,10 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-.sports-container span {
+.sports-container a {
   font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+  color: #f9b042;
 }
 
 .marqueeStyle {
@@ -79,6 +80,11 @@
   }
 }
 
+.paused {
+  animation-play-state: paused;
+}
+
+
 /* .tickerwrapper {
 
   position: relative;
@@ -90,9 +96,8 @@
   cursor: pointer;
 } */
 
-
 .text {
-  font-size: 36px;
+  font-size: 22px;
   white-space: nowrap;
   animation: scrolling-text 10s linear infinite;
 }
@@ -108,4 +113,24 @@
 
 .scrolling-text {
   animation-play-state: paused;
+}
+
+@media (max-width: 560px) {
+  .sports-container {
+    height: 50px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .sports-container {
+    height: 40px;
+  }
+
+  .text {
+    font-size: 12px;
+  }
 }
