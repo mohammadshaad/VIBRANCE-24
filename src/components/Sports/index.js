@@ -4,6 +4,8 @@ import '../../components/Sports/styles/style.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { solid, regular, brands, icon } from '@fortawesome/fontawesome-svg-core/import.macro' 
 import { faMedal } from '@fortawesome/free-solid-svg-icons'
+// import { Link } from "react-router-dom";
+
 
 
 function Index() {
@@ -105,13 +107,15 @@ function Index() {
                         </ul>
                     </div> */}
 
+                    
                     <p ref={textRef} className="text cursor-pointer"
                     >
                         <FontAwesomeIcon icon={faMedal} className='mr-3' />
                         {text}
-                        <a href='/'>REGISTER NOW</a>
+                        <a href='#Footer'>REGISTER NOW</a>
                         <FontAwesomeIcon icon={faMedal} className='ml-3' />
                     </p>
+                    
                     <p ref={textRef} className="text cursor-pointer"
                     >
                         <FontAwesomeIcon icon={faMedal} className='mr-3' />
