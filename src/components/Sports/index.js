@@ -9,18 +9,30 @@ import { faMedal } from '@fortawesome/free-solid-svg-icons'
 function Index() {
 
 
-    const [text, setText] = useState("Sports fest is now live");
+    const [text, setText] = useState("Sports fest is now live | ");
     const textRef = useRef();
 
-    const handleClick = () => {
-        textRef.current.classList.toggle("scrolling-text");
+    // const handleClick = () => {
+    //     textRef.current.classList.toggle("scrolling-text");
+    // };
+
+    const handleMouseEnter = () => {
+        textRef.current.style.animationPlayState = "paused";
     };
+
+    const handleMouseLeave = () => {
+        textRef.current.style.animationPlayState = "running";
+    };
+
+
 
 
     return (
         <>
             <div className='sports-container flex items-center justify-center w-full mt-10 mb-10'>
-                <div className='sports-wrapper text-white w-screen'>
+                <div className='sports-wrapper text-white w-screen flex gap-14' onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                >
                     {/* <div id='rssBlock' className='flex'>
                         <p className="cnnContents flex w-screen">
                             <span className="marqueeStyle flex gap-10">&nbsp;
@@ -93,8 +105,40 @@ function Index() {
                         </ul>
                     </div> */}
 
-                    <p ref={textRef} className="text cursor-pointer" onMouseOverCapture={handleClick}>
+                    <p ref={textRef} className="text cursor-pointer"
+                    >
+                        <FontAwesomeIcon icon={faMedal} className='mr-3' />
                         {text}
+                        <a href='/'>REGISTER NOW</a>
+                        <FontAwesomeIcon icon={faMedal} className='ml-3' />
+                    </p>
+                    <p ref={textRef} className="text cursor-pointer"
+                    >
+                        <FontAwesomeIcon icon={faMedal} className='mr-3' />
+                        {text}
+                        <a href='/'>REGISTER NOW</a>
+                        <FontAwesomeIcon icon={faMedal} className='ml-3' />
+                    </p>
+                    <p ref={textRef} className="text cursor-pointer"
+                    >
+                        <FontAwesomeIcon icon={faMedal} className='mr-3' />
+                        {text}
+                        <a href='/'>REGISTER NOW</a>
+                        <FontAwesomeIcon icon={faMedal} className='ml-3' />
+                    </p>
+                    <p ref={textRef} className="text cursor-pointer"
+                    >
+                        <FontAwesomeIcon icon={faMedal} className='mr-3' />
+                        {text}
+                        <a href='/'>REGISTER NOW</a>
+                        <FontAwesomeIcon icon={faMedal} className='ml-3' />
+                    </p>
+                    <p ref={textRef} className="text cursor-pointer"
+                    >
+                        <FontAwesomeIcon icon={faMedal} className='mr-3' />
+                        {text}
+                        <a href='/'>REGISTER NOW</a>
+                        <FontAwesomeIcon icon={faMedal} className='ml-3' />
                     </p>
                 </div>
 
