@@ -29,7 +29,7 @@ function Index() {
 
     return (
         <>
-            <div className='sports-container flex items-center justify-center w-full mt-10 mb-10'>
+            <div className='sports-container flex items-center justify-center w-full mt-10 mb-20'>
                 <div className='sports-wrapper text-white w-screen flex gap-14' onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                 >
