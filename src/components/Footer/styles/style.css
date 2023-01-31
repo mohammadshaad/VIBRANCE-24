@@ -1,31 +1,66 @@
 .footer {
-    height: 250px;
-    background: linear-gradient(145deg, rgba(178, 25, 28, 1), rgba(187, 46, 121, 1) 50%);
+  height: 300px;
+  background: linear-gradient(
+    145deg,
+    rgba(178, 25, 28, 1),
+    rgba(187, 46, 121, 1) 50%
+  );
 }
 .footer-wrapper {
-    background: white;
-    width: 80vw;
-    box-shadow: 0px 0px 5px 0px white;
+  background: white;
+  width: 80vw;
+  height: 50px;
+  box-shadow: 0px 0px 5px 0px white;
 }
 
 .instagram-icon-contact {
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid grey;
-    border-radius: 80px;
-    color: grey;
-    transition: all 0.4s;
-    font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid grey;
+  border-radius: 80px;
+  color: grey;
+  transition: all 0.4s;
+  font-size: 20px;
+}
+
+.instagram-icon-contact:hover {
+  background: linear-gradient(
+    95deg,
+    rgba(178, 25, 28, 1),
+    rgba(187, 46, 121, 1)
+  );
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s;
+  color: white;
+}
+
+.footer-wrapper p {
+  font-size: 15px;
+}
+
+.hr {
+  border: 2px solid #f9b042;
+  width: 20%;
+  margin: 20px auto;
+}
+
+@media (max-width: 750px) {
+  .footer-wrapper {
+    height: 30px;
   }
-  
-  .instagram-icon-contact:hover {
-    background: linear-gradient(95deg, rgba(178, 25, 28, 1), rgba(187, 46, 121, 1));
-    cursor: pointer;
-    border: none;
-    transition: all 0.4s;
-    color: white;
+
+  .instagram-icon-contact {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
   }
+
+  .footer-wrapper p {
+    font-size: 12px;
+  }
+}
