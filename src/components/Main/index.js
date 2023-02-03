@@ -44,7 +44,7 @@ function Index() {
 
   let interval;
   const startTimer = () => {
-    const countDownDate = new Date("March 01, 2023 00:00:00").getTime();
+    const countDownDate = new Date("March 02, 2023 00:00:00").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
