@@ -82,23 +82,17 @@ function Index() {
         </div>
       </div>
 
-      <motion.div
-        ref={ref}
-        variants={headerVariant}
-        initial="hidden"
-        animate={control}>
 
-        <div className="header-box flex items-center justify-center flex-col">
-          <div className="stars header-tagline-box flex items-center justify-center gap-14 sm:gap-5">
-            <img src={star1} alt="star" className=''/>
-            <p className='header-tagline text-center leading-3'>VIT Chennai's Annual Sports and Cultural Fest</p>
-            <img src={star2} alt="star" className=''/>
-          </div>
-
-          <p className='header-text'>Vibrance is Back</p>
+      <div className="header-box flex items-center justify-center flex-col">
+        <div className="stars header-tagline-box flex items-center justify-center gap-14 sm:gap-5">
+          <img src={star1} alt="star" className='' />
+          <p className='header-tagline text-center leading-3'>VIT Chennai's Annual Sports and Cultural Fest</p>
+          <img src={star2} alt="star" className='' />
         </div>
 
-      </motion.div>
+        <p className='header-text'>Vibrance is Back</p>
+      </div>
+
 
 
       <motion.div
