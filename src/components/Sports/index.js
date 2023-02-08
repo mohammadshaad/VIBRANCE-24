@@ -11,7 +11,7 @@ import { faMedal } from '@fortawesome/free-solid-svg-icons'
 function Index() {
 
 
-    const [text, setText] = useState("Sports fest is now live | ");
+    const [text, setText] = useState("Sports & Cultural Fest Are Now Live | ");
     const textRef = useRef();
 
     // const handleClick = () => {
