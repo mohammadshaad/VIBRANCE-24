@@ -44,7 +44,7 @@ function Index() {
 
   let interval;
   const startTimer = () => {
-    const countDownDate = new Date("March 02, 2023 00:00:00").getTime();
+    const countDownDate = new Date("March 07, 2024 00:00:00").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -90,7 +90,7 @@ function Index() {
           <img src={star2} alt="star" className='' />
         </div>
 
-        <p className='header-text'>Vibrance is Back</p>
+        <p className='header-text'>Vibrance'24 is Back</p>
       </div>
 
 
