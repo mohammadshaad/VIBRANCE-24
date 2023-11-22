@@ -101,19 +101,19 @@ function Index() {
         animate={control}>
 
         <div className="countdown-box whitespace-pre">
-          <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained on March</div>
+          <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained on</div>
           <div className="date">
             <div className="counter-day">
-              <p className='counter-day-number'>7th, </p>
-              {/* <p className='counter-day-text'>Days</p> */}
+              <p className='counter-day-number'>07</p>
+              <p className='counter-day-text'>Day</p>
             </div>
             <div className="counter-minute">
-              <p className='counter-minute-number'>8th &</p>
-              {/* <p className='counter-minute-text'>March</p> */}
+              <p className='counter-minute-number'> 03 </p>
+              <p className='counter-minute-text'>Month</p>
             </div>
             <div className="counter-seconds">
-              <p className='counter-seconds-number'> 9th</p>
-              {/* <p className='counter-seconds-text'>Seconds</p> */}
+              <p className='counter-seconds-number'>2024</p>
+              <p className='counter-seconds-text'>Year</p>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@ function Index() {
         animate={control}>
 
         <div className="countdown-box mt-10">
-          {/* <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained in</div> */}
+          <div className="countdown-tagline mb-4">Countdown Begins</div>
           <div className="counter">
             <div className="counter-day">
               <p className='counter-day-number'>{timerDays}:</p>

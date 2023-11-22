@@ -110,7 +110,8 @@ body {
   display: flex;
   font-family: 'Gilroy-Regular', sans-serif;
   font-size: 200px;
-  line-height: 100%;
+  margin-bottom: 40px;
+  /* line-height: 100%; */
   background: linear-gradient(
     188.26deg,
     #ffffff 6.34%,

@@ -11,7 +11,7 @@ import { faMedal } from '@fortawesome/free-solid-svg-icons'
 function Index() {
 
 
-    const [text, setText] = useState("Sports & Cultural Fest Are Now Live | ");
+    const [text, setText] = useState("Vibrance'24 commencing on 7th March 2024 | ");
     const textRef = useRef();
 
     // const handleClick = () => {
@@ -112,7 +112,7 @@ function Index() {
                     >
                         <FontAwesomeIcon icon={faMedal} className='mr-3' />
                         {text}
-                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>REGISTER NOW</a>
+                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>STAY TUNED!</a>
                         <FontAwesomeIcon icon={faMedal} className='ml-3' />
                     </p>
                     
@@ -120,28 +120,28 @@ function Index() {
                     >
                         <FontAwesomeIcon icon={faMedal} className='mr-3' />
                         {text}
-                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>REGISTER NOW</a>
+                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>STAY TUNED!</a>
                         <FontAwesomeIcon icon={faMedal} className='ml-3' />
                     </p>
                     <p ref={textRef} className="text cursor-pointer"
                     >
                         <FontAwesomeIcon icon={faMedal} className='mr-3' />
                         {text}
-                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>REGISTER NOW</a>
+                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>STAY TUNED!</a>
                         <FontAwesomeIcon icon={faMedal} className='ml-3' />
                     </p>
                     <p ref={textRef} className="text cursor-pointer"
                     >
                         <FontAwesomeIcon icon={faMedal} className='mr-3' />
                         {text}
-                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>REGISTER NOW</a>
+                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>STAY TUNED!</a>
                         <FontAwesomeIcon icon={faMedal} className='ml-3' />
                     </p>
                     <p ref={textRef} className="text cursor-pointer"
                     >
                         <FontAwesomeIcon icon={faMedal} className='mr-3' />
                         {text}
-                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>REGISTER NOW</a>
+                        <a href='https://vitchennaievents.com/vibrance/' target={'_blank'} rel='noreferrer'>STAY TUNED!</a>
                         <FontAwesomeIcon icon={faMedal} className='ml-3' />
                     </p>
                 </div>
