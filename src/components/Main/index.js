@@ -93,7 +93,6 @@ function Index() {
         <p className='header-text'>Vibrance'24</p>
       </div>
 
-
       <motion.div
         ref={ref}
         variants={timerVariant}
