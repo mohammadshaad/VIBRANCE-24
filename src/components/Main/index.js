@@ -1,25 +1,23 @@
-import React, { useState, useEffect } from 'react'
-import background from '../../assets/background.webp'
+import React, { useState, useEffect } from "react";
+import background from "../../assets/background.webp";
 // import background2 from '../../assets/background2.webp'
-import '../../components/Main/style/style.css'
-import star1 from "../../assets/star1.svg"
-import star2 from "../../assets/star2.svg"
-import ellipse1 from "../../assets/ellipse1.webp"
-import ellipse2 from "../../assets/ellipse2.webp"
+import "../../components/Main/style/style.css";
+import star1 from "../../assets/star1.svg";
+import star2 from "../../assets/star2.svg";
+import ellipse1 from "../../assets/ellipse1.webp";
+import ellipse2 from "../../assets/ellipse2.webp";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const headerVariant = {
   visible: { scaleY: 1, transition: { duration: 0.5 } },
-  hidden: { scaleY: 0 }
+  hidden: { scaleY: 0 },
 };
 
 const timerVariant = {
   visible: { opacity: 1, transition: { duration: 0.8 } },
-  hidden: { opacity: 0 }
+  hidden: { opacity: 0 },
 };
-
-
 
 function Index() {
   const [timerDays, setTimerDays] = useState(0);
@@ -29,8 +27,6 @@ function Index() {
 
   const control = useAnimation();
   const [ref, inView] = useInView();
-
-
 
   useEffect(() => {
     startTimer();
@@ -49,15 +45,22 @@ function Index() {
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countDownDate - now;
-      const days = Math.floor(distance / (24 * 60 * 60 * 1000)).toString().padStart(2, '0');
+      const days = Math.floor(distance / (24 * 60 * 60 * 1000))
+        .toString()
+        .padStart(2, "0");
       const hours = Math.floor(
         (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
-      ).toString().padStart(2, '0');
+      )
+        .toString()
+        .padStart(2, "0");
 
-      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60)).toString().padStart(2, '0');
+      const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60))
+        .toString()
+        .padStart(2, "0");
 
-      const seconds = Math.floor((distance % (60 * 1000)) / 1000).toString().padStart(2, '0');
-
+      const seconds = Math.floor((distance % (60 * 1000)) / 1000)
+        .toString()
+        .padStart(2, "0");
 
       if (distance < 0) {
         clearInterval(interval.current);
@@ -72,86 +75,93 @@ function Index() {
 
   return (
     <>
-      <img src={background} alt='background' className='background-image' />
-      <div className='ellipses flex items-center justify-between'>
-        <div className='ell1'>
-          <img src={ellipse2} alt='' className='ellipse1' />
+      <img src={background} alt="background" className="background-image" />
+      <div className="ellipses flex items-center justify-between">
+        <div className="ell1">
+          <img src={ellipse2} alt="" className="ellipse1" />
         </div>
-        <div className='ell2'>
-          <img src={ellipse1} alt='' className='ellipse2' />
+        <div className="ell2">
+          <img src={ellipse1} alt="" className="ellipse2" />
         </div>
       </div>
 
-
       <div className="header-box flex items-center justify-center flex-col">
         <div className="stars header-tagline-box flex items-center justify-center gap-14 sm:gap-5">
-          <img src={star1} alt="star" className='' />
-          <p className='header-tagline text-center leading-3'>VIT Chennai's Annual Sports and Cultural Fest</p>
-          <img src={star2} alt="star" className='' />
+          <img src={star1} alt="star" className="" />
+          <p className="header-tagline text-center leading-3">
+            VIT Chennai's Annual Sports and Cultural Fest
+          </p>
+          <img src={star2} alt="star" className="" />
         </div>
 
-        <p className='header-text'>Vibrance'24</p>
+        <p className="header-text">Vibrance'24</p>
       </div>
 
       <motion.div
         ref={ref}
         variants={timerVariant}
         initial="hidden"
-        animate={control}>
-
+        animate={control}
+      >
         <div className="countdown-box whitespace-pre">
-          <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained on</div>
+          <div className="countdown-tagline mb-4">
+            Get ready to be Engaged, Enthralled, Entertained on
+          </div>
           <div className="date">
             <div className="counter-day">
-              <p className='counter-day-number'>07</p>
-              <p className='counter-day-text'>Day</p>
+              <p className="counter-day-number">07,</p>
+              {/* <p className="counter-day-text">MARCH</p> */}
             </div>
             <div className="counter-minute">
-              <p className='counter-minute-number'> 03 </p>
-              <p className='counter-minute-text'>Month</p>
+              <p className="counter-minute-number"> 08 & </p>
+              {/* <p className='counter-minute-text'>Month</p> */}
             </div>
             <div className="counter-seconds">
-              <p className='counter-seconds-number'>2024</p>
-              <p className='counter-seconds-text'>Year</p>
+              <p className="counter-seconds-number">09</p>
+              {/* <p className="counter-seconds-text">2024</p> */}
             </div>
+          </div>
+          <div className="flex items-center justify-center w-1/2  -mt-10 md:-mt-6 mb-10">
+            <p className="counter-day-text ">
+              <div>MARCH</div>
+            </p>
+            <p className="counter-day-text ">
+              <div>2024</div>
+            </p>
           </div>
         </div>
       </motion.div>
 
-
-
       <motion.div
         ref={ref}
         variants={timerVariant}
         initial="hidden"
-        animate={control}>
-
+        animate={control}
+      >
         <div className="countdown-box mt-10">
           <div className="countdown-tagline mb-4">Countdown Begins</div>
           <div className="counter">
             <div className="counter-day">
-              <p className='counter-day-number'>{timerDays}:</p>
-              <p className='counter-day-text'>Days</p>
+              <p className="counter-day-number">{timerDays}:</p>
+              <p className="counter-day-text">Days</p>
             </div>
             <div className="counter-day">
-              <p className='counter-day-number'>{timerHours}:</p>
-              <p className='counter-day-text'>Hours</p>
+              <p className="counter-day-number">{timerHours}:</p>
+              <p className="counter-day-text">Hours</p>
             </div>
             <div className="counter-minute">
-              <p className='counter-minute-number'>{timerMinutes}:</p>
-              <p className='counter-minute-text'>Minutes</p>
+              <p className="counter-minute-number">{timerMinutes}:</p>
+              <p className="counter-minute-text">Minutes</p>
             </div>
             <div className="counter-seconds">
-              <p className='counter-seconds-number'>{timerSeconds}</p>
-              <p className='counter-seconds-text'>Seconds</p>
+              <p className="counter-seconds-number">{timerSeconds}</p>
+              <p className="counter-seconds-text">Seconds</p>
             </div>
           </div>
         </div>
       </motion.div>
-
-
     </>
-  )
+  );
 }
 
-export default Index
+export default Index;

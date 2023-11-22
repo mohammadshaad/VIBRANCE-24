@@ -139,7 +139,20 @@ body {
   margin-top: -38px;
   font-family: "Gilroy-Regular";
   text-align: center;
-  font-size: 23px;
+  font-size: 20px;
+}
+
+.counter-day-text div {
+  background: linear-gradient(
+    188.26deg,
+    #ffffff 6.34%,
+    rgba(255, 255, 255, 0) 147.97%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 35px;
 }
 
 @media (max-width: 423px) {
@@ -182,6 +195,11 @@ body {
     font-size: 6px;
     margin-top: -10px;
   }
+
+  .counter-day-text div {
+    font-size: 22px;
+  }
+  
 
 
   .ellipses {
@@ -242,6 +260,10 @@ body {
   .counter-seconds-text {
     font-size: 10px;
     margin-top: -18px;
+  }
+
+  .counter-day-text div {
+    font-size: 24px;
   }
 
   .background-image {
