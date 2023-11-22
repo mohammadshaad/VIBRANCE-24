@@ -90,8 +90,34 @@ function Index() {
           <img src={star2} alt="star" className='' />
         </div>
 
-        <p className='header-text'>Vibrance'24 is Back</p>
+        <p className='header-text'>Vibrance'24</p>
       </div>
+
+
+      <motion.div
+        ref={ref}
+        variants={timerVariant}
+        initial="hidden"
+        animate={control}>
+
+        <div className="countdown-box whitespace-pre">
+          <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained on March</div>
+          <div className="date">
+            <div className="counter-day">
+              <p className='counter-day-number'>7th, </p>
+              {/* <p className='counter-day-text'>Days</p> */}
+            </div>
+            <div className="counter-minute">
+              <p className='counter-minute-number'>8th &</p>
+              {/* <p className='counter-minute-text'>March</p> */}
+            </div>
+            <div className="counter-seconds">
+              <p className='counter-seconds-number'> 9th</p>
+              {/* <p className='counter-seconds-text'>Seconds</p> */}
+            </div>
+          </div>
+        </div>
+      </motion.div>
 
 
 
@@ -101,8 +127,8 @@ function Index() {
         initial="hidden"
         animate={control}>
 
-        <div className="countdown-box">
-          <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained in</div>
+        <div className="countdown-box mt-10">
+          {/* <div className="countdown-tagline mb-4">Get ready to be Engaged, Enthralled, Entertained in</div> */}
           <div className="counter">
             <div className="counter-day">
               <p className='counter-day-number'>{timerDays}:</p>

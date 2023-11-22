@@ -14,7 +14,7 @@
   border-radius: 10px;
   /* border: 0.2px solid rgba(255, 0, 151, 1); */
   /* opacity: 50%; */
-  background-image: url("/src/assets/gallery.webp");
+  background-image: url("/src/assets/gallery.png");
   background-size: cover;
   animation: slide 70s linear infinite;
 }

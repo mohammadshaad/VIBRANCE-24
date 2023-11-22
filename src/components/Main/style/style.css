@@ -70,7 +70,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .countdown-tagline {
@@ -93,7 +93,23 @@ body {
 .counter {
   display: flex;
   font-family: 'Gilroy-Regular', sans-serif;
-  font-size: 230px;
+  font-size: 100px;
+  line-height: 100%;
+  background: linear-gradient(
+    188.26deg,
+    #ffffff 6.34%,
+    rgba(255, 255, 255, 0) 147.97%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.date {
+  display: flex;
+  font-family: 'Gilroy-Regular', sans-serif;
+  font-size: 200px;
   line-height: 100%;
   background: linear-gradient(
     188.26deg,
@@ -116,10 +132,10 @@ body {
 .counter-minute-text,
 .counter-day-text,
 .counter-seconds-text {
-  font-size: 12px;
+  font-size: 8px;
   width: fit-content;
   margin: auto;
-  margin-top: -124px;
+  margin-top: -38px;
   font-family: "Gilroy-Regular";
   text-align: center;
   font-size: 23px;
@@ -147,7 +163,11 @@ body {
   }
 
   .counter {
-    font-size: 64px;
+    font-size: 30px;
+  }
+
+  .date {
+    font-size: 60px;
   }
 
   .header-tagline-box > img {
@@ -158,8 +178,8 @@ body {
   .counter-minute-text,
   .counter-day-text,
   .counter-seconds-text {
-    font-size: 11px;
-    margin-top: -17px;
+    font-size: 6px;
+    margin-top: -10px;
   }
 
 
@@ -204,7 +224,11 @@ body {
   }
 
   .counter {
-    font-size: 64px;
+    font-size: 44px;
+  }
+
+  .date {
+    font-size: 84px;
   }
 
   .header-tagline-box > img {
@@ -215,8 +239,8 @@ body {
   .counter-minute-text,
   .counter-day-text,
   .counter-seconds-text {
-    font-size: 11px;
-    margin-top: -17px;
+    font-size: 10px;
+    margin-top: -18px;
   }
 
   .background-image {
@@ -246,13 +270,17 @@ body {
   }
 
   .counter {
-    font-size: 164px;
+    font-size: 64px;
+  }
+
+  .date {
+    font-size: 140px;
   }
 
   .counter-minute-text,
   .counter-day-text,
   .counter-seconds-text {
-    font-size: 16px;
-    margin-top: -87px;
+    font-size: 10px;
+    margin-top: -20px;
   }
 }
