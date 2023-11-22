@@ -16,8 +16,8 @@ function index() {
                         <p className='text-4xl font-bold sm:text-2xl'>Vibrance Conveners</p>
                         <hr className='hr' />
                         <div className='flex gap-14 sm:flex-col sm:gap-4 sm:text-sm'>
-                            <p className=''>Dr Premalatha M</p>
-                            <p className=''>Dr Prasad M</p>
+                            <p className=''>Dr. Sathiya Narayanan S</p>
+                            <p className=''>Dr. Balamurugan P</p>
                         </div>
                     </div>
 
