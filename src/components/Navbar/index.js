@@ -4,7 +4,7 @@ import vibranceLogo2 from '../../assets/vibrancelogo2.png'
 import '../../components/Navbar/style/style.css'
 // import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import vitLogo from '../../assets/vitbeautifullogo.webp'
+import vitLogo from '../../assets/vitlogo.png'
 
 
 function index() {
