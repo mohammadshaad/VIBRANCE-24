@@ -109,6 +109,10 @@ function Index() {
           </div>
           <div className="date">
             <div className="counter-day">
+              <p className="counter-day-number">06,</p>
+              {/* <p className="counter-day-text">MARCH</p> */}
+            </div>
+            <div className="counter-day">
               <p className="counter-day-number">07,</p>
               {/* <p className="counter-day-text">MARCH</p> */}
             </div>
